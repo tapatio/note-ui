@@ -1,7 +1,7 @@
 # Jeff's Note UI
 
 ## How-to run
-Prerequisite: this UI requires the note-service to be running. Get it here: https://github.com/tapatio/note-service
+Prerequisite: This UI requires the note-service to be running. Get it here: https://github.com/tapatio/note-service
 
 1. git clone https://github.com/tapatio/note-ui.git
 2. npm update
