@@ -3,17 +3,6 @@ import NoteItem from './NoteItem';
 import PropTypes from 'prop-types'
 
 class Notes extends Component {
-  // This function is not being called since we are component drilling
-  // up to the App component by calling this.props.markComplete in
-  // the render function below.
-  markComplete = () => {
-    console.log('Hello from Notes.js')
-  }
-
-  deleteNote = () => {
-
-  }
-
   render() {
     // This component has prop types that include an array of notes.
     console.log('Render from Notes.js', this.props.notes)

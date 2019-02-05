@@ -30,19 +30,6 @@ class App extends Component {
       })
   }
 
-  // Toggles complete state.
-  // By using a arrow function, we don't need to call bind on this.markComplete
-  // below in render.
-  markComplete = (id) => {
-    console.log('from App.js component drilled markComplete id:', id)
-    this.setState({ notes: this.state.notes.map(note => {
-      if(note.id === id) {
-        note.completed = !note.completed
-      }
-      return note
-    }) })
-  }
-
   // Use a map filter to return on notes where the id does not match the 
   // id passed into deleteNote.
   deleteNote = (id) => {

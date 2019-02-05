@@ -18,8 +18,7 @@ Prerequisite: This UI requires the LATEST note-service to be running. Download i
 The UI provides the following features:
 1. List all stored notes.
 2. Create a new note.
-3. Delete existing notes.
-4. Cross out a note (not retained).
+3. Delete an existing note.
 
 ### Software Versions Used
 

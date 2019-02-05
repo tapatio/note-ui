@@ -7,14 +7,8 @@ export class NoteItem extends Component {
         return {
             backgroundColor: '#f4f4f4',
             padding: '10px',
-            borderBottom: '1px #ccc dotted',
-            textDecoration: this.props.note.completed ?
-                'line-through' : 'none'
+            borderBottom: '1px #ccc dotted'
         }
-    }
-
-    markComplete = (id) => {
-        console.log('Hello from NoteItem.js')
     }
 
     render() {
@@ -30,8 +24,6 @@ export class NoteItem extends Component {
             // bubble up id.
             <div style={this.getStyle()}>
                 <p>
-                    <input type='checkbox'
-                        onChange={this.props.markComplete.bind(this, id)}/>
                     { body }
                     <button style={buttonStyle}
                         onClick={this.props.deleteNote.bind(this, id)}>x</button>
