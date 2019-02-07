@@ -5,15 +5,15 @@ export class NoteItem extends Component {
     // Styling for our notes.
     getStyle = () => {
         return {
-            backgroundColor: '#f4f4f4',
-            padding: '10px',
-            borderBottom: '1px #ccc dotted'
+            backgroundColor: "#f4f4f4",
+            padding: "10px",
+            borderBottom: "1px #ccc dotted"
         }
     }
 
     render() {
         // This component has prop types that include an array of notes.
-        console.log('Render from NoteItem.js', this.props.note)
+        console.log(`Render from NoteItem.js: ${this.props.note}`)
 
         // Use destructuring to pull variables out of props.
         const { id, body } = this.props.note
@@ -39,13 +39,13 @@ NoteItem.propTypes = {
 }
 
 const buttonStyle = {
-    backgroundColor: '#ff0000',
-    color: '#fff',
-    border: 'none',
-    padding: '5px 8px',
-    borderRadius: '50%',
-    cursor: 'pointer',
-    float: 'right'
+    backgroundColor: "#ff0000",
+    color: "#fff",
+    border: "none",
+    padding: "5px 8px",
+    borderRadius: "50%",
+    cursor: "pointer",
+    float: "right"
 }
 
 export default NoteItem
